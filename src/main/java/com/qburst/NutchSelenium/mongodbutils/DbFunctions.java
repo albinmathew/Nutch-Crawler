@@ -68,7 +68,7 @@ public class DbFunctions {
         BasicDBObject obj = (BasicDBObject) handle.next();
         return obj.get(parameterName);
     }
-
+    
     public ArrayList<DBObject> getAllDoc(DBCollection coll) {
         ArrayList<DBObject> docList = new ArrayList<>();
         DBCursor cursor = coll.find();
